@@ -1,0 +1,22 @@
+# Animated ASCII Image Renderer - Python dependencies
+# Tested with Python 3.10+ (developed on 3.12)
+
+# Pygame is used for the window, rendering loop, input and animation.
+# pygame-ce is the community edition; it installs as the `pygame` package
+# and is fully API-compatible with upstream pygame.
+pygame-ce>=2.5.0
+
+# Pillow handles image loading, format validation, resizing and edge
+# detection (FIND_EDGES).
+Pillow>=10.0.0
+
+# NumPy powers all per-pixel brightness/contrast/gamma/edge math and the
+# animation threshold matrices.
+numpy>=1.24.0
+
+# imageio + imageio-ffmpeg are used only by the video-recording feature
+# (V key).  imageio-ffmpeg bundles its own ffmpeg binary, so no system ffmpeg
+# is required.  The application still runs without them installed; pressing V
+# simply shows an install hint.
+imageio>=2.30.0
+imageio-ffmpeg>=0.4.0
